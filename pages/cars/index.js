@@ -1,4 +1,4 @@
-import CarsPage from "../../components/layout/templates/CarsPage"
+import CarsPage from "../../components/templates/CarsPage"
 import carsData from "../../data/carsData"
 
 function Details() {
