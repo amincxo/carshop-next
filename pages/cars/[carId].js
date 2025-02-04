@@ -1,14 +1,14 @@
 import {useRouter } from 'next/router';
 import carsData from '../../data/carsData';
-import Card from '../../components/module/Card';
+import CarDetails from '../../components/templates/CarDetails';
 
 function CarDetail() {
     const router = useRouter();
-    const {carID} = router.query || {};
-    const CarDetail = carsData[carID -1]
-    
+    const {carId} = router.query ;
+    const carDetail = carsData[carId -1];
+    console.log(carDetail)
   return (
-    <div>CarDetail</div>
+    <CarDetails {...carDetail} />
   )
 }
 
