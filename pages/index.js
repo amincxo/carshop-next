@@ -1,4 +1,4 @@
-
+import AllButton from "../components/module/AllButton";
 import Categoryies from "../components/module/Categoryies";
 import SearchBar from "../components/module/SearchBar";
 import CarsPage from "../components/templates/CarsPage";
@@ -11,7 +11,7 @@ function Index() {
     <div>
       <SearchBar />
       <Categoryies />
-      {/* <AllButton /> */}
+      <AllButton />
       <CarsPage data={cars} />
     </div>
   );
