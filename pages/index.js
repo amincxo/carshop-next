@@ -1,9 +1,20 @@
 
+import Categoryies from "../components/module/Categoryies";
+import SearchBar from "../components/module/SearchBar";
+import CarsPage from "../components/templates/CarsPage";
+import carsData from "../data/carsData";
 
-export default function Home() {
+function Index() {
+  const cars = carsData.slice(0,3)
+
   return (
-    <>
-        <h1>salam in syte mane</h1>
-    </>
-  )
+    <div>
+      <SearchBar />
+      <Categoryies />
+      {/* <AllButton /> */}
+      <CarsPage data={cars} />
+    </div>
+  );
 }
+
+export default Index;
